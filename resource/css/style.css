@@ -1,0 +1,153 @@
+/*  11/11/2017   */
+
+/*
+  Color-orange:  #d77617
+*/
+/*--------------------------------------------------------------------*/
+/*                      BASIC SETUP                                   */ 
+/*--------------------------------------------------------------------*/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+    
+    background-color: #fff;
+    color: #555;
+    font-family: "Lato","Arial",sans-serif;
+    font-weight: 300;
+    font-size: 20px;
+    text-rendering: optimizeLegibility;  /*/ this property insure that the font are aligned in stable measurement:/*/ 
+}
+
+
+/*------------------------------------------------------------------*/
+/*                   REUSABLE COMPONENTS                            */
+/*------------------------------------------------------------------*/
+
+.row{
+    max-width: 1140px;
+    margin: 0 auto;
+}
+
+ h1{
+    margin: 0;
+    color: #fff;
+    font-size: 200%; /* This sets the font-size to 40px which is the twice  
+     the Main-html-tag 'font-size' which is universe to all html-tag elements in.
+     our stylesheet*/
+    font-weight: 300;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    word-spacing: 2px;
+}
+
+/*------------------------------------------------------------------*/
+/*                   BUTTONS COMPONENTS                              */
+/*------------------------------------------------------------------*/
+
+.btn:link,
+.btn:visited{ /* 'link' and visted' add condition to the when the links                   are used*/
+    display: inline-block;
+    margin-top: 20px;
+    padding: 10px 30px;
+    font-weight: 300;
+    text-decoration: none;
+    border-radius: 200px;
+    /*remove this line to delete the border*/
+    transition: background-color 0.3s, border 0.3s, color 0.3s ; 
+    /* transition add a slow-motion effect when we hover over the button  */
+}
+
+.btn-home:link,
+.btn-home:visited{
+  background-color: #e67e22;
+  border: 2px solid #e67e22;
+    color: #fff;
+    margin-right: 15px;
+}
+
+.btn-ghost:link,
+.btn-ghost:visited{
+    border: 2px solid #e67e22;
+    color: #e67e22;
+}
+
+.btn:hover,
+.btn:active{
+    background-color: #d77617;   
+}
+
+
+.btn-home:hover,
+.btn-home:active{
+  background-color: #b86512;    
+}
+
+.btn-ghost:hover,
+.btn-ghost:active{
+    border: 2px solid #e67e17;
+    color: #fff;
+}
+
+
+/*------------------------------------------------------------------*/
+/*                   HEADER COMPONENTS                              */
+/*------------------------------------------------------------------*/
+
+header{
+    background-image: linear-gradient(rgba(10, 8, 8, 0.72), rgba(8, 6, 6, 0.72)) , url(img/hero.jpg); /* the linar-gradiant allow us to add a second background into the image */
+    background-size: cover; /* The cover allows us to fit the image into our section */
+    background-position: center;
+    height: 100vh;
+}
+
+.title-text{
+    position: absolute;
+    width: 1140px;
+    top:50%;
+    left: 50%;
+    transform: translate(-50%, 50%) /* translates the elementer of half the it's width into the left */
+}
+
+.logo{
+    margin-top: 20px;
+    height: 100px;
+    width: auto;
+    float: left;
+}
+
+.main-nav{
+    float: right;
+    list-style: none; 
+    padding: 0px 10px;
+}
+
+.main-nav li{
+    display: inline-block;
+    margin-left: 40px;
+    margin-top: 60px;
+   
+}
+.main-nav li a:link,
+.main-nav li a:visited{
+    color: #fff;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 75%;
+    border-bottom: 2px solid transparent; /* The transparent hides the
+                                            border if button is not hoving or active */ 
+    transition: border-bottom 0.4s;
+     padding-bottom: 8px;
+}
+
+
+.main-nav li a:hover,
+.main-nav li a:active{
+    border-bottom: 2px solid  #d77617;
+}
+    
+
+
