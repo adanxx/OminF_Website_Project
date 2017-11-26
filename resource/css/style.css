@@ -3,9 +3,9 @@
 /*
   Color-orange:  #d77617
 */
-/*--------------------------------------------------------------------*/
-/*                      BASIC SETUP                                   */ 
-/*--------------------------------------------------------------------*/
+/*----------------------------------------------------------------------------*/
+/*                      BASIC SETUP                                           */ 
+/*----------------------------------------------------------------------------*/
 *{
     margin: 0;
     padding: 0;
@@ -23,36 +23,92 @@ html{
 }
 
 
-/*------------------------------------------------------------------*/
-/*                   REUSABLE COMPONENTS                            */
-/*------------------------------------------------------------------*/
+/*----------------------------------------------------------------------------*/
+/*                   REUSABLE COMPONENTS                                      */
+/*----------------------------------------------------------------------------*/
 
 .row{
     max-width: 1140px;
     margin: 0 auto;
 }
 
- h1{
-    margin: 0;
-    color: #fff;
-    font-size: 200%; /* This sets the font-size to 40px which is the twice  
-     the Main-html-tag 'font-size' which is universe to all html-tag elements in.
-     our stylesheet*/
-    font-weight: 300;
-    text-transform: uppercase;
-    letter-spacing: 1px;
-    word-spacing: 2px;
+section{
+    padding: 80px 70px;
+    
 }
 
-/*------------------------------------------------------------------*/
-/*                   BUTTONS COMPONENTS                              */
-/*------------------------------------------------------------------*/
+h1,
+h2,
+h3{
+    margin: 0;
+    font-weight: 300;
+    text-transform: uppercase;
+}
+
+h1{
+   margin: 0; 
+   font-size: 200%; /* This sets the font-size to 40px which is the twice  
+     the Main-html-tag 'font-size' which is universe to all html-tag elements in.our stylesheet*/
+    color: #fff;
+    word-spacing: 2px;
+    letter-spacing: 1px;
+}
+
+h2{
+    font-size: 180%;
+    word-spacing: 2px;
+    text-align: center;
+    margin-bottom: 30px;
+    letter-spacing: 1px;
+}
+
+h2:after{ /*The 'after' is pesudo that allow us to add html-element from the 
+          css*/
+    display: block;
+    height: 3px;
+    background-color: #d77617;
+    content: "";  /*The content-tag is required when using after-attribute */
+    width: 80px;
+    margin: 0 auto;
+    margin-top: 10px;  
+}
+
+h3{
+    font-size: 110%;
+    margin-bottom: 15px;
+}
+
+.box{
+    padding: 50px 12px;
+}
+
+.box p{
+    font-size: 90%;
+    line-height: 145%;
+}
+
+
+/*--------------------------PARAGRAPHS----------------------------*/
+.Long-copy{
+    line-height: 145%;
+    width: 80%;
+    margin-left: 10%;
+}
+
+
+
+
+
+/*---------------------------------------------------------------------------*/
+/*                   BUTTONS COMPONENTS                                      */
+/*---------------------------------------------------------------------------*/
 
 .btn:link,
-.btn:visited{ /* 'link' and visted' add condition to the when the links                   are used*/
+.btn:visited{ /* 'link' and visted' add condition the when the links are used*/                 
     display: inline-block;
     margin-top: 20px;
-    padding: 10px 30px;
+    padding: 10px 15px;
+    font-size: 80%;
     font-weight: 300;
     text-decoration: none;
     border-radius: 200px;
@@ -93,9 +149,9 @@ html{
 }
 
 
-/*------------------------------------------------------------------*/
-/*                   HEADER COMPONENTS                              */
-/*------------------------------------------------------------------*/
+/*---------------------------------------------------------------------------*/
+/*                   HEADER COMPONENTS                                       */
+/*---------------------------------------------------------------------------*/
 
 header{
     background-image: linear-gradient(rgba(10, 8, 8, 0.72), rgba(8, 6, 6, 0.72)) , url(img/hero.jpg); /* the linar-gradiant allow us to add a second background into the image */
@@ -107,8 +163,8 @@ header{
 .title-text{
     position: absolute;
     width: 1140px;
-    top:50%;
-    left: 50%;
+    top:35%;
+    left: 55%;
     transform: translate(-50%, 50%) /* translates the elementer of half the it's width into the left */
 }
 
@@ -140,9 +196,8 @@ header{
     border-bottom: 2px solid transparent; /* The transparent hides the
                                             border if button is not hoving or active */ 
     transition: border-bottom 0.4s;
-     padding-bottom: 8px;
+    padding-bottom: 8px;
 }
-
 
 .main-nav li a:hover,
 .main-nav li a:active{
