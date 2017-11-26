@@ -33,7 +33,7 @@ html{
 }
 
 section{
-    padding: 80px 70px;
+    padding: 80px 0px;
     
 }
 
@@ -74,12 +74,12 @@ h2:after{ /*The 'after' is pesudo that allow us to add html-element from the
 }
 
 h3{
-    font-size: 110%;
+    font-size: 100%;
     margin-bottom: 15px;
 }
 
 .box{
-    padding: 50px 12px;
+    padding: 40px 0px;
 }
 
 .box p{
@@ -93,10 +93,20 @@ h3{
     line-height: 145%;
     width: 80%;
     margin-left: 10%;
+    margin-bottom: 20px;
 }
 
 
+/*----------------------------ICON--------------------------------*/
 
+.icon-vig{
+    font-size: 250%;
+    display: block;
+    color: #d77617;
+    margin-bottom: 10px;
+    padding-left: 80px;
+    
+}
 
 
 /*---------------------------------------------------------------------------*/
@@ -150,7 +160,7 @@ h3{
 
 
 /*---------------------------------------------------------------------------*/
-/*                   HEADER COMPONENTS                                       */
+/*                         HEADER COMPONENTS                                 */
 /*---------------------------------------------------------------------------*/
 
 header{
@@ -204,5 +214,43 @@ header{
     border-bottom: 2px solid  #d77617;
 }
     
+/*-----------------------------------------------------------------------*/
+/*                         MEALS-SECTION                                 */
+/*-----------------------------------------------------------------------*/
+
+.section-meals{
+    padding: 0;
+}
+
+
+.meals-imgs{
+    list-style: none;
+    width: 100%;
+}
+
+.meals-imgs li{
+    display: block;
+    float: left;
+    width: 25%;
+}
+
+.meals-photo{
+    width: 100%;
+    margin: 0;
+    overflow: hidden;
+    background-color: #000;
+}
+
+.meals-photo img{
+    opacity: 0.7;
+    width: 100%;
+    height: auto;
+    transform: scale(1.18);
+    transition: transform 0.5s, opacity 0.5s;    
+}
+.meals-photo img:hover{
+    transform: scale(1.09);
+    opacity: 1;
+}
 
 
