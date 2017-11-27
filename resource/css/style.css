@@ -96,14 +96,14 @@ h3{
     line-height: 145%;
 }
 
-/*-------------------------LINK-----------------------------------*/
+/*-----------------------------LINK-------------------------------*/
 a:link,
 a:visited{
     text-decoration: none;
     color: #d77617;
     padding-bottom: 1px;
     border-bottom: 1px solid #d77617;
-    transition: border-bottom 0.4s, color 0.3s;
+    transition: border-bottom 0.3s, color 0.3s;
 }
 
 a:hover,
@@ -208,6 +208,7 @@ header{
     background-size: cover; /* The cover allows us to fit the image into our section */
     background-position: center;
     height: 100vh;
+    background-attachment: fixed;
 }
 
 .title-text{
@@ -341,6 +342,11 @@ header{
     margin-right: 25px;
 }
 
+.btn-app:link,
+.btn-app:visited{
+    border:0;
+}
+
 .btn-app img{
     height: 50px;;
     width: auto;
@@ -349,7 +355,7 @@ header{
 }
 
 /*--------------------------------------------------------------*/
-/*                    THE CITY SECTION                         */
+/*                    THE CITY SECTION                          */
 /*--------------------------------------------------------------*/
 
 .box img{
@@ -362,9 +368,44 @@ header{
     margin-bottom: 5px;
 }
 
-
+/*-------------------------------------------------------------*/
+/*                    THE CUSTOMER REVIEW                      */
+/*-------------------------------------------------------------*/
    
+.section-reviews{
+    background-image: linear-gradient(rgba(10, 8, 8, 0.72), rgba(8, 6, 6, 0.72)), url(img/back-customers.jpg);
+    background-size: cover;
+    color: #f4f0f0;
+    background-attachment: fixed;
+}
+
+blockquote{
+
+    padding: 2%;
+    font-style: italic;
+    line-height: 145%;
+    font-size: 90%;
+    
+}
+
+blockquote:before{
+    content: '\201C';
+    font-size: 400%;
+    font-style: italic;
+}
 
 
+cite{
+    display: block;
+    font-size: 80%;
+    margin-top: 22px;
+    
+}
 
-
+cite img{
+    height: 50px;
+    width: auto;
+    border-radius: 50%;
+    margin-right: 12px;
+    vertical-align: middle;
+}
