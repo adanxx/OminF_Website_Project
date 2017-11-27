@@ -22,10 +22,19 @@ html{
     text-rendering: optimizeLegibility;  /*/ this property insure that the font are aligned in stable measurement:/*/ 
 }
 
+.clearfix{zoom: 1}
+.clearfix{
+    content: '.';
+    clear: both;
+    display: block;
+    height: 0;
+    visibility: hidden;
+}
 
-/*----------------------------------------------------------------------------*/
-/*                   REUSABLE COMPONENTS                                      */
-/*----------------------------------------------------------------------------*/
+
+/*-----------------------------------------------------------------*/
+/*                   REUSABLE COMPONENTS                           */
+/*-----------------------------------------------------------------*/
 
 .row{
     max-width: 1140px;
@@ -109,9 +118,9 @@ h3{
 }
 
 
-/*---------------------------------------------------------------------------*/
-/*                   BUTTONS COMPONENTS                                      */
-/*---------------------------------------------------------------------------*/
+/*-----------------------------------------------------------------*/
+/*                   BUTTONS COMPONENTS                            */
+/*-----------------------------------------------------------------*/
 
 .btn:link,
 .btn:visited{ /* 'link' and visted' add condition the when the links are used*/                 
@@ -159,9 +168,9 @@ h3{
 }
 
 
-/*---------------------------------------------------------------------------*/
-/*                         HEADER COMPONENTS                                 */
-/*---------------------------------------------------------------------------*/
+/*-------------------------------------------------------------------*/
+/*                     HEADER COMPONENT                              */
+/*-------------------------------------------------------------------*/
 
 header{
     background-image: linear-gradient(rgba(10, 8, 8, 0.72), rgba(8, 6, 6, 0.72)) , url(img/hero.jpg); /* the linar-gradiant allow us to add a second background into the image */
@@ -214,9 +223,9 @@ header{
     border-bottom: 2px solid  #d77617;
 }
     
-/*-----------------------------------------------------------------------*/
-/*                         MEALS-SECTION                                 */
-/*-----------------------------------------------------------------------*/
+/*----------------------------------------------------------------*/
+/*                       MEALS-SECTION                            */
+/*----------------------------------------------------------------*/
 
 .section-meals{
     padding: 0;
@@ -252,5 +261,62 @@ header{
     transform: scale(1.09);
     opacity: 1;
 }
+
+/*--------------------------------------------------------------*/
+/*                    HOW IT WORKS-SECTION                      */
+/*--------------------------------------------------------------*/
+
+.steps-box{
+    
+}
+
+.steps-box:first-child{
+    text-align: right;
+    padding-right: 3%;
+    margin-top: 30px;
+    
+}
+
+.steps-box:last-child{
+    padding-left: 3%;
+    margin-top: 70px;
+    
+}
+
+.app-iphone-img{
+    width: 40%;
+}
+
+.works-step{
+    margin-bottom: 50px;
+}
+
+.works-step:last-of-type{
+    margin-bottom: 66px;
+}
+
+
+.works-step div{
+    color: #d77615;
+    border: 2px solid #d77617;
+    display: inline-block;
+    border-radius: 50%;
+    height: 50px;
+    width: 50px;
+    text-align: center;
+    padding: 5px;
+    font-size: 150%;
+    float: left;
+    margin-right: 25px;
+}
+
+.btn-app img{
+    height: 50px;;
+    width: auto;
+    margin-right: 10px;
+    
+}
+
+
 
 
