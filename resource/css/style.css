@@ -23,7 +23,7 @@ html{
 }
 
 .clearfix{zoom: 1}
-.clearfix{
+.clearfix:after{
     content: '.';
     clear: both;
     display: block;
@@ -96,6 +96,23 @@ h3{
     line-height: 145%;
 }
 
+/*-------------------------LINK-----------------------------------*/
+a:link,
+a:visited{
+    text-decoration: none;
+    color: #d77617;
+    padding-bottom: 1px;
+    border-bottom: 1px solid #d77617;
+    transition: border-bottom 0.4s, color 0.3s;
+}
+
+a:hover,
+a:active{
+    color: #555;
+    border-bottom: 1px solid transparent; /*transparent removes the border-underline*/
+        
+}
+
 
 /*--------------------------PARAGRAPHS----------------------------*/
 .Long-copy{
@@ -117,7 +134,21 @@ h3{
     
 }
 
-
+.icon-small{
+    color: #d77617;
+    display: inline-block;;
+    width: 30px;
+    height: 0px;
+    text-align:center;
+    font-size: 120%;
+    
+    /* align text and icons */
+    line-height: 120%;
+    vertical-align:middle;
+    margin-top: -31px;
+    margin-right: 2px;
+}
+  
 /*-----------------------------------------------------------------*/
 /*                   BUTTONS COMPONENTS                            */
 /*-----------------------------------------------------------------*/
@@ -266,8 +297,8 @@ header{
 /*                    HOW IT WORKS-SECTION                      */
 /*--------------------------------------------------------------*/
 
-.steps-box{
-    
+.section-steps{
+    background-color: #f0f0f0;
 }
 
 .steps-box:first-child{
@@ -316,6 +347,23 @@ header{
     margin-right: 10px;
     
 }
+
+/*--------------------------------------------------------------*/
+/*                    THE CITY SECTION                         */
+/*--------------------------------------------------------------*/
+
+.box img{
+    width: 100%;
+    height: auto;
+    margin-bottom: 30px; 
+}
+
+.city-feature {
+    margin-bottom: 5px;
+}
+
+
+   
 
 
 
