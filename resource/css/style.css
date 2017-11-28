@@ -384,14 +384,21 @@ blockquote{
     padding: 2%;
     font-style: italic;
     line-height: 145%;
-    font-size: 90%;
+    font-size: 85%;
+    position: relative;
+    margin-top: 40px;
     
 }
+
 
 blockquote:before{
     content: '\201C';
     font-size: 400%;
     font-style: italic;
+    display: block;
+    position: absolute;
+    top: -5px;
+    left:-5px;
 }
 
 
@@ -409,3 +416,69 @@ cite img{
     margin-right: 12px;
     vertical-align: middle;
 }
+
+
+/*-------------------------------------------------------------*/
+/*                    SUPSCRIPTION-SECTION                     */
+/*-------------------------------------------------------------*/
+
+.section-plans{
+    background-color: #f0f0f0;
+}
+
+.plan-box{
+    background-color: #fff;
+    border-radius: 2%;
+    width: 90%;
+    margin-left: 5%;
+    box-shadow: 0 1px 1px #bfbfbf;
+}
+
+.plan-box div{
+    padding: 15px;
+    border-bottom: 1px solid #e8e8e8;
+}
+
+.plan-box div:last-child{
+    text-align: center;
+    border: 0;
+}
+
+.plan-box div:first-child{
+    background-color: #fdfdfd;
+    border-top-right-radius: 10%;
+    border-top-left-radius: 10%;
+}
+
+
+.plan-price {
+    font-size: 180%;
+    margin-bottom: 10px;
+    font-weight: 100;
+    color: #d77617;
+}
+
+.plan-price span{
+   padding-left: 10px;
+   font-size: 50%;  
+   font-weight: 200; 
+}
+
+.plan-price-meal{
+   font-size: 80%;   
+}
+
+.plan-box ul{
+    list-style: none;
+}
+
+.plan-box ul li{
+    padding: 5px 0;
+}
+
+
+
+
+
+
+
