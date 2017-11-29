@@ -1,0 +1,88 @@
+
+
+/* applies to big tablets 1200 and computer screens: 1140px;*/
+@media only screen and (max-width:1200px){
+    
+    header{
+        height: 120vh;
+    }
+    
+    .title-text{
+    width: 100%;
+    padding 0 2%: 
+  }    
+    .row{padding: 0 2%;}
+    
+}
+
+
+/* small tablet to big ipads from : 768px - 1023px*/
+@media only screen and (max-width:1023px){
+    
+    body{
+        font-size: 15px; }
+    section{ padding: 60px 0;}
+    
+     .btn-app img{
+      height: 45px; 
+      width: auto;         
+    }
+    .Long-copy{
+    width: 80%;
+    margin-left: 10%;
+    margin-bottom: 20px;
+   }
+    .works-step{
+        margin-bottom: 30px;
+    }    
+    .works-step:last-child{
+        margin-bottom: 30px;
+    }
+    .works-step:last-of-type{
+        margin-bottom: 40px;
+    }
+    
+    .works-step div{
+        padding: 8px;
+        width: 40px;
+        height: 40px;
+        font-size: 123%;
+    }
+
+    .icon-small{ width: 25px; line-height: 220% }
+    .city-feature{ font-size: 80%;}
+    
+    .plan-box{
+        width: 100%;
+        margin-left: 0%;
+    }
+    .plan-price{font-size: 150%; }
+    .plan-box ul, li{
+        font-size: 100;
+    }
+    
+    .contact-form{width: 80%;}
+    
+}
+    
+
+
+/*will apply to browser in tablet from: 481px -767px   
+*/
+@media only screen and (max-width:767px){
+ 
+     .btn-app img{
+      height: 40px; 
+      width: auto;
+    }
+}
+
+/*Phone-screen: form 0-400px */
+@media only screen and (max-width:400px){
+    
+}
+
+
+
+
+

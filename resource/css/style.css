@@ -211,7 +211,7 @@ header{
     background-image: linear-gradient(rgba(10, 8, 8, 0.72), rgba(8, 6, 6, 0.72)) , url(img/hero.jpg); /* the linar-gradiant allow us to add a second background into the image */
     background-size: cover; /* The cover allows us to fit the image into our section */
     background-position: center;
-    height: 100vh;
+    height: 130vh;
     background-attachment: fixed;
 }
 
@@ -225,6 +225,7 @@ header{
 
 .logo{
     margin-top: 20px;
+    margin-left: 30px;
     height: 100px;
     width: auto;
     float: left;
