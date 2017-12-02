@@ -56,8 +56,8 @@ h3{
 
 h1{
    margin: 0; 
-   font-size: 200%; /* This sets the font-size to 40px which is the twice  
-     the Main-html-tag 'font-size' which is universe to all html-tag elements in.our stylesheet*/
+   font-size: 200%; /* This sets the font-size to 40px which is the twice the Main-html-tag 'font-size' 
+                       which is universe to all html-tag elements in.our stylesheet*/
     color: #fff;
     word-spacing: 2px;
     letter-spacing: 1px;
@@ -223,24 +223,36 @@ header{
     transform: translate(-50%, 50%) /* translates the elementer of half the it's width into the left */
 }
 
-.logo{
-    margin-top: 20px;
-    margin-left: 30px;
+.logo-white,
+.logo-black{
+    
     height: 100px;
     width: auto;
     float: left;
 }
 
+.logo-black{
+    display: none;
+    height: 65px;
+}
+
+
+/* Main-Navigation */
+.row-1{
+    width: 83%;
+}
+
 .main-nav{
+    margin: 10px;
     float: right;
     list-style: none; 
-    padding: 0px 10px;
+    padding: 0 30px 0 0px;
 }
 
 .main-nav li{
     display: inline-block;
     margin-left: 40px;
-    margin-top: 60px;
+    margin-top: 30px;
    
 }
 .main-nav li a:link,
@@ -248,7 +260,7 @@ header{
     color: #fff;
     text-decoration: none;
     text-transform: uppercase;
-    font-size: 75%;
+    font-size: 85%;
     border-bottom: 2px solid transparent; /* The transparent hides the
                                             border if button is not hoving or active */ 
     transition: border-bottom 0.4s;
@@ -260,6 +272,34 @@ header{
     border-bottom: 2px solid  #d77617;
 }
     
+/* Sticky Navigation*/
+
+.sticky{
+    position:fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: #fff;
+    box-shadow: 0 1px 2px #d4d4d4;
+    z-index: 9999;
+}
+
+.sticky .main-nav{
+    font-size: 100%;
+    margin-top: 2px;
+    height: 50px;
+}
+
+.sticky .main-nav li a:link,
+.sticky .main-nav li a:visited{
+    padding-bottom: 8px;
+    color: #343434;
+}
+
+.sticky .logo-black{ display: block;}
+.sticky .logo-white{ display: none;}
+
+
 /*----------------------------------------------------------------*/
 /*                       MEALS-SECTION                            */
 /*----------------------------------------------------------------*/
@@ -270,7 +310,7 @@ header{
 
 
 .meals-imgs{
-    list-style: none;
+    list-style:none;
     width: 100%;
 }
 
@@ -282,6 +322,7 @@ header{
 
 .meals-photo{
     width: 100%;
+    height: auto;
     margin: 0;
     overflow: hidden;
     background-color: #000;
@@ -291,13 +332,15 @@ header{
     opacity: 0.7;
     width: 100%;
     height: auto;
-    transform: scale(1.18);
+    transform: scale(1.8);
     transition: transform 0.5s, opacity 0.5s;    
 }
 .meals-photo img:hover{
     transform: scale(1.09);
     opacity: 1;
 }
+
+
 
 /*--------------------------------------------------------------*/
 /*                    HOW IT WORKS-SECTION                      */
